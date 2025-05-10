@@ -90,3 +90,5 @@ GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)
 ```
 
 위 명령어로 실행합니다.
+
+_존재하지 않는 csv파일 입력시, 오류 메세지가 뜹니다. (test Command로 구현)_

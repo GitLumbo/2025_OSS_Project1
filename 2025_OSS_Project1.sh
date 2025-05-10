@@ -1,10 +1,14 @@
 #! /bin/bash
+file_name="$0"
 if [ $# -ne 1 ]; then
-    echo "usage: $0 file"
+    echo "usage: $file_name file"
     exit 1
 fi
-file_name="$0"
 csv_file_name="$1"
+if [ ! -f "$csv_file_name" ]; then
+    echo "[Error] $csv_file_name does not exist."
+    exit 1
+fi
 
 # get_column_idx "컬럼명"
 # => 해당 컬럼 index 출력
